@@ -48,7 +48,7 @@ public class RegistryEngravingEffects {
         ARMARA = newEffect(ConstellationsAS.armara)
                 .addEffect(new EngravingEffect.PotionEffect(() -> Effects.RESISTANCE, 0, 0))
                 .addEffect(new EngravingEffect.EnchantmentEffect(() -> Enchantments.PROTECTION, 2, 5))
-                .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_ARMOR, ModifierType.STACKING_MULTIPLY, 1.1F, 1.2F)
+                .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_ARMOR, ModifierType.STACKING_MULTIPLY, 1.05F, 1.1F)
                         .addApplicableType(EnchantmentType.WEARABLE))
                 .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_INC_DODGE, ModifierType.ADDITION, 5F, 10F)
                         .addApplicableType(EnchantmentType.WEAPON)
@@ -91,7 +91,7 @@ public class RegistryEngravingEffects {
                 .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_HEALTH, ModifierType.ADDITION, 1F, 2F)
                         .addApplicableType(EnchantmentType.WEARABLE)
                         .formatResultAsInteger())
-                .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_REACH, ModifierType.ADDED_MULTIPLY, 1.05F, 1.1F)
+                .addEffect(new EngravingEffect.ModifierEffect(() -> PerkAttributeTypesAS.ATTR_TYPE_REACH, ModifierType.ADDED_MULTIPLY, 0.05F, 0.1F)
                         .addApplicableType(EnchantmentType.DIGGER)
                         .addApplicableType(EnchantmentType.WEAPON)
                         .addApplicableType(EnchantmentType.TRIDENT));
